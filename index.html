@@ -2,34 +2,35 @@
 <html>
 <head>
 	<title>Calculator project</title>
+	<script src="calculator.js"></script>
 </head>
 <body>
 <h1>Calculator Project</h1>
 <table>
 <tr>
 	<td><button>Del</button></td>
-	<td colspan="3"><input type="display">
+	<td colspan="3"><input type="display" id="displayScreen">
 </tr>
 <tr>
-	<td><button>7</button></td>
-	<td><button>8</button></td>
-	<td><button>9</button></td>
-	<td><button>+</button></td>
+	<td><button onclick="addNumberToDisplay('7')">7</button></td>
+	<td><button onclick="addNumberToDisplay('8')">8</button></td>
+	<td><button onclick="addNumberToDisplay('9')">9</button></td>
+    <td><button>+</button></td>
 </tr>
 <tr>
-	<td><button>4</button></td>
-	<td><button>5</button></td>
-	<td><button>6</button></td>
+	<td><button onclick="addNumberToDisplay('4')">4</button></td>
+	<td><button onclick="addNumberToDisplay('5')">5</button></td>
+	<td><button onclick="addNumberToDisplay('6')">6</button></td>
 	<td><button>-</button></td>
 </tr>
 <tr>
-	<td><button>1</button></td>
-	<td><button>2</button></td>
-	<td><button>3</button></td>
+	<td><button onclick="addNumberToDisplay('1')">1</button></td>
+	<td><button onclick="addNumberToDisplay('2')">2</button></td>
+	<td><button onclick="addNumberToDisplay('3')">3</button></td>
 	<td><button>&#247;</button></td>
 </tr>
 <tr>
-	<td><button>0</button></td>
+	<td><button onclick="addNumberToDisplay('0')">0</button></td>
 	<td><button>.</button></td>
 	<td><button>=</button></td>
 	<td><button>&#215;</button></td>
