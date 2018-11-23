@@ -1,16 +1,19 @@
 function addNumberToDisplay(number) {
-	var displayScreen = document.getElementById('displayScreen');
-	var displayScreenValue = displayScreen.value
-	displayScreen.value = displayScreenValue + number
+	const displayScreen = document.getElementById('displayScreen');
+	const displayScreenValue = displayScreen.value;
+	displayScreen.value = displayScreenValue + number;
 }
 function buttonClickedCalculate(operator) {
-	var displayScreen = document.getElementById('displayScreen');
-	var displayScreenValue = displayScreen.value
-	displayScreen.value = displayScreenValue + operator
+	const displayScreen = document.getElementById('displayScreen');
+	const displayScreenValue = displayScreen.value;
+	displayScreen.value = displayScreenValue + operator;
 }
 function evaluateEquation() {
-	var displayScreen = document.getElementById('displayScreen');
-	var displayScreenValue = displayScreen.value;
-	var evaluateEquation = eval(displayScreen.value)
+	const displayScreen = document.getElementById('displayScreen');
+	const evaluateEquation = eval(displayScreen.value);
 	displayScreen.value = evaluateEquation;
+}
+function deleteFromDisplay() {
+	const displayScreen = document.getElementById('displayScreen');
+	displayScreen.value = '';
 }
