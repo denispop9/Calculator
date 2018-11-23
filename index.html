@@ -15,25 +15,25 @@
 	<td><button onclick="addNumberToDisplay('7')">7</button></td>
 	<td><button onclick="addNumberToDisplay('8')">8</button></td>
 	<td><button onclick="addNumberToDisplay('9')">9</button></td>
-    <td><button>+</button></td>
+    <td><button onclick="buttonClickedCalculate('+')">+</button></td>
 </tr>
 <tr>
 	<td><button onclick="addNumberToDisplay('4')">4</button></td>
 	<td><button onclick="addNumberToDisplay('5')">5</button></td>
 	<td><button onclick="addNumberToDisplay('6')">6</button></td>
-	<td><button>-</button></td>
+	<td><button onclick="buttonClickedCalculate('-')">-</button></td>
 </tr>
 <tr>
 	<td><button onclick="addNumberToDisplay('1')">1</button></td>
 	<td><button onclick="addNumberToDisplay('2')">2</button></td>
 	<td><button onclick="addNumberToDisplay('3')">3</button></td>
-	<td><button>&#247;</button></td>
+	<td><button onclick="buttonClickedCalculate('*')">&#215;</button></td>
 </tr>
 <tr>
 	<td><button onclick="addNumberToDisplay('0')">0</button></td>
-	<td><button>.</button></td>
-	<td><button>=</button></td>
-	<td><button>&#215;</button></td>
+	<td><button onclick="addNumberToDisplay('.')">.</button></td>
+	<td><button onclick="evaluateEquation('=')">=</button></td>
+	<td><button onclick="buttonClickedCalculate('/')">&#247;</button></td>
 </tr>
 </table>
 </body>
